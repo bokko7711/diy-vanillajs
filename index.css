@@ -1,0 +1,9 @@
+body{
+    background-color:olive;
+}
+.name-asking-form, .name-welcome{
+    display: none;/**/
+}
+.is-now-showing{
+    display: block;
+}
