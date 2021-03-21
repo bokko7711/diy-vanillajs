@@ -1,9 +1,16 @@
 body{
     background-color:olive;
+    color: white;
 }
 .name-asking-form, .name-welcome{
     display: none;/**/
 }
 .is-now-showing{
     display: block;
+}
+.wallpaper{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;/**/
 }
