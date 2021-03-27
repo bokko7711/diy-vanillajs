@@ -11,16 +11,23 @@
 </head>
 
 <body class="body">
-    <h1 class="current-time">15:35:07</h1>
-    <form class="name-asking-form">
-        <input class="name-asking-input" type="text" placeholder="What is your name?">
-    </form>
-    <span class="name-welcome">welcome</span>
-    <span class="current-weather"></span>
-    <form class="to-do-asking-form">
-        <input class="to-do-input" type="text" placeholder="Write a to do list">
-    </form>
-    <ul class="to-do-list"></ul>
+    <div class="column">
+        <h1 class="current-time">15:35:07</h1>
+        <div class="name-about">
+            <form class="name-asking-form">
+                <input class="name-asking-input" type="text" placeholder="What is your name?">
+            </form>
+            <span class="name-welcome">welcome</span>
+        </div>
+
+        <span class="current-weather"></span>
+    </div>
+    <div class="column">
+        <form class="to-do-asking-form">
+            <input class="to-do-input" type="text" placeholder="Write a to do list🖊">
+        </form>
+        <ul class="to-do-list"></ul>
+    </div>
     <script src="javascript/greeting.js"></script>
     <script src="javascript/clock.js"></script>
     <script src="javascript/background.js"></script>

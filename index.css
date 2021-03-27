@@ -1,6 +1,22 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
+
 body{
     background-color:olive;
     color: white;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+}
+.column{
+    width: 50%;
+    height: 100vh;
+}
+.column:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .name-asking-form, .name-welcome{
     display: none;/**/
@@ -8,12 +24,82 @@ body{
 .is-now-showing{
     display: block;
 }
+input{
+    font-size: 20px;
+    background: none;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid white;
+}
+::placeholder{
+    color: white;
+    text-align: center;
+}
+input:focus{
+    color: #fff;
+    background: none;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid white;
+}
 .wallpaper{
     position: absolute;
     top: 0px;
     left: 0px;
     z-index: -1;/**/
 }
+.current-time{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.name-about{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
 .current-weather{
     display: block;
+    font-size: 20px;
+}
+.to-do-asking-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 70px;
+}
+.to-do-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.to-do-list-item{
+    width: 600px;
+    display: flex;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 50px;
+    justify-content: space-between;
+    background-color: grey;
+    align-items: center;
+}
+.to-do-list-item__text{
+    margin-left: 5px;
+    font-size: 20px;
+}
+.to-do-list-item__button{
+    display: block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border:none;
+    background-color: tomato;
+    color: white;
+    font:  inherit;
+    font-size: 16px;
+    cursor: pointer;
 }

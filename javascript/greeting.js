@@ -20,7 +20,7 @@ function requestName() {
 function showGreeting(userName) {
     form.classList.remove(isNowShowing);
     welcome.classList.add(isNowShowing);
-    welcome.innerText = `WELCOME ${userName}!!`;
+    welcome.innerText = `WELCOME, ${userName}.`;
 }
 
 function init() {

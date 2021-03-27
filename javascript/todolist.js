@@ -29,8 +29,11 @@ function createListItem(text) {
     //console.log(`li.id=${li.id}`);
     const span = document.createElement("span");
     const button = document.createElement("button");
+    li.classList.add("to-do-list-item");
+    span.classList.add("to-do-list-item__text");
+    button.classList.add("to-do-list-item__button");
     span.innerText = text;
-    button.innerText = `❌`;
+    button.innerText = `DELETE`;
     button.addEventListener("click", whenDeleted);
     li.appendChild(span);
     li.appendChild(button);
@@ -50,8 +53,11 @@ function showListItem(toDo) {
     li.id = toDo.id;
     const span = document.createElement("span");
     const button = document.createElement("button");
+    li.classList.add("to-do-list-item");
+    span.classList.add("to-do-list-item__text");
+    button.classList.add("to-do-list-item__button");
     span.innerText = toDo.text;
-    button.innerText = `❌`;
+    button.innerText = `DELETE`;
     button.addEventListener("click", whenDeleted);
     li.appendChild(span);
     li.appendChild(button);
