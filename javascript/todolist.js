@@ -69,7 +69,9 @@ function whenSubmitted(event) {
     const tempToDo = toDoInput.value;
     //console.log(tempToDo);
     toDoInput.value = BLANK;
-    createListItem(tempToDo);
+    if (tempToDo !== BLANK) {
+        createListItem(tempToDo);
+    }
 }
 
 function loadToDoList(loadedToDoList) {

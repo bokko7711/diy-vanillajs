@@ -11,7 +11,7 @@ function requestWeather(lat, lng) {
             const temp = jsonedWeather.main.temp;
             const city = jsonedWeather.name;
             weatherSpan.innerText =
-                `${city} | ${temp}°C`;
+                `${city} || ${temp}°C`;
         });
 }
 
